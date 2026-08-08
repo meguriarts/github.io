@@ -1,21 +1,145 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta name="google-site-verification" content="2EUFfN_pFhS9lRsx-sDEizl_SR8F63LkJtVoNs-GFEU" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meguri Arts</title>
+    <title>Meguri Arts - Coloring & Casual Games</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px 20px; background-color: #f8f9fa; }
-        .card { background: white; max-width: 500px; margin: auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        a { color: #1a73e8; text-decoration: none; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
-<body>
-    <div class="card">
-        <h1>Meguri Arts</h1>
-        <p>Aplikasi & Layanan Android Resmi.</p>
-        <p><a href="privacy-policy.html">Kebijakan Privasi</a></p>
-    </div>
+<body class="bg-slate-900 text-slate-300 flex flex-col min-h-screen selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-slate-900/80 backdrop-blur-lg border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <!-- Logo Placeholder -->
+                <div class="w-10 h-10 bg-gradient-to-tr from-indigo-600 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                </div>
+                <span class="font-bold text-xl text-white tracking-wide">Meguri Arts</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#home" class="hover:text-white transition duration-300">Home</a>
+                <a href="#features" class="hover:text-white transition duration-300">Games</a>
+                <a href="#privacy" class="hover:text-white transition duration-300">Privacy Policy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24">
+        <!-- Hero Section -->
+        <section id="home" class="max-w-6xl mx-auto px-6 py-20 text-center">
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-semibold tracking-wide">
+                Available on Google Play
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mt-2 mb-6 leading-tight">
+                Discover Relaxing <br />
+                <span class="gradient-text">Coloring & Casual Fun.</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Unleash your creativity with our beautiful art apps and enjoy endless entertainment with our engaging casual games designed for everyone.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://play.google.com/store/apps/developer?id=Meguri+Arts" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-slate-900 px-8 py-3.5 rounded-2xl font-bold hover:bg-slate-100 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                    Explore Our Games
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="border-t border-slate-800 bg-slate-900/50 py-20">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-white">What We Build</h2>
+                    <p class="text-slate-400 mt-3">Crafting digital experiences that bring joy and relaxation.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Coloring Feature -->
+                    <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-indigo-500/50 transition-colors">
+                        <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Beautiful Line Art</h3>
+                        <p class="text-slate-400 leading-relaxed">Experience the joy of coloring with carefully designed grey line art formats that blend seamlessly as you apply your colors, giving a clean and vibrant finish.</p>
+                    </div>
+                    <!-- Casual Games Feature -->
+                    <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-indigo-500/50 transition-colors">
+                        <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Casual & Fun</h3>
+                        <p class="text-slate-400 leading-relaxed">Easy to learn, hard to put down. Jump right into relaxing gameplay with intuitive mechanics whenever you need a quick break.</p>
+                    </div>
+                    <!-- Family Safe Feature -->
+                    <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-indigo-500/50 transition-colors">
+                        <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Family Friendly</h3>
+                        <p class="text-slate-400 leading-relaxed">We build safe, engaging, and creative environments that are highly suitable for players of all ages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy" class="max-w-4xl mx-auto px-6 py-20">
+            <div class="bg-slate-800 p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-slate-700">
+                <h2 class="text-3xl font-bold text-white mb-2">Privacy Policy</h2>
+                <p class="text-sm text-slate-400 mb-8 border-b border-slate-700 pb-6">Last updated: August 8, 2026</p>
+                
+                <div class="space-y-8 text-slate-300">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-3">1. Information Collection</h3>
+                        <p class="leading-relaxed">Meguri Arts designs games with user privacy in mind. We do not collect personal data that can identify our players. We only use anonymous data such as device IDs for analytics, bug tracking, and overall app performance improvements.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-3">2. Use of Third-Party Services</h3>
+                        <p class="leading-relaxed mb-3">To serve ads and analyze app crashes, we use trusted third-party services. These services may collect device-specific information as outlined in their respective privacy policies:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-slate-400">
+                            <li>Google Play Services</li>
+                            <li>Google AdMob</li>
+                            <li>Unity Ads</li>
+                            <li>Meta Audience Network (FAN)</li>
+                            <li>AppLovin</li>
+                            <li>Firebase Analytics</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-3">3. Contact Us</h3>
+                        <p class="leading-relaxed mb-4">If you have any questions or suggestions regarding our Privacy Policy, please contact our support team at:</p>
+                        <a href="mailto:meguriarts@gmail.com" class="inline-block bg-slate-900 px-6 py-3 rounded-xl border border-slate-700 font-mono text-indigo-400 hover:text-indigo-300 transition">meguriarts@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-900 py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+            <p>&copy; 2026 Meguri Arts. All rights reserved.</p>
+            <div class="flex gap-6 font-medium">
+                <a href="/app-ads.txt" target="_blank" class="hover:text-white transition">app-ads.txt</a>
+                <a href="#privacy" class="hover:text-white transition">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
