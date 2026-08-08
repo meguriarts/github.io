@@ -1,1 +1,11 @@
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Google AdMob
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Unity Ads
+unity3d.com, [UNITY_PUBLISHER_ID], DIRECT, 1df1211717208186
+
+# Meta Audience Network (FAN)
+facebook.com, [META_PUBLISHER_ID], DIRECT, c3e20eee3f780d68
+
+# AppLovin
+applovin.com, [APPLOVIN_PUBLISHER_ID], DIRECTgoogle.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
