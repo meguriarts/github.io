@@ -1,5 +1,5 @@
 # Google AdMob
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-4472628625499261, DIRECT, f08c47fec0942fa0
 
 # Unity Ads
 unity3d.com, [UNITY_PUBLISHER_ID], DIRECT, 1df1211717208186
